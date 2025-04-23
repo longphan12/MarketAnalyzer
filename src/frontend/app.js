@@ -314,6 +314,20 @@ document.addEventListener('DOMContentLoaded', function() {
                             display: true,
                             text: 'Annual Closings'
                         }
+                    },
+                    y: {
+                        ticks: {
+                            autoSkip: false, 
+                            font: {
+                                size: 11 
+                            }
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'top'
                     }
                 }
             }

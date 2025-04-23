@@ -25,6 +25,7 @@ Due to OpenAI API cost coverage, this application is currently running locally o
 
 
 ## Demo Video
+```https://drive.google.com/file/d/1PrJxR7F_MD6J9zdgNFE8eaEeImMG8kzv/view?usp=drive_link```
 
 
 ## Technical Requirements

@@ -15,6 +15,11 @@ A GPT-powered tool for analyzing quarterly market reports across six regions: Ho
 
 ## Screenshots
 
+![Dashboard Overview](/src/public/landing.png)
+![Analysis Sample Result](/src/public/1.png)
+![Analysis Sample Result](/src/public/2.png)
+![Analysis Sample Result](/src/public/3.png)
+
 
 ## Demo Video
 
@@ -26,35 +31,49 @@ A GPT-powered tool for analyzing quarterly market reports across six regions: Ho
 
 ## Installation and Setup
 1. Clone the repository
-2. Create and activate virtual environment
+2. Create and activate virtual environment by running the commands below
+   ```bash
+   python -m venv venv # Both macOS, Linux, and Windows
+   source venv/bin/activate  # On macOS/Linux
+   # or
+   .\venv\Scripts\activate  # On Windows
+   ```
 3. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-4. Set up OpenAI API key in `.env` file
+4. Set up OpenAI API key
+   - Go to https://auth.openai.com/log-in. Create an account if haven't already done so.
+   - Go to "Your profile" by clicking the profile icon.
+   - Go to API keys, generate a new secret key with the associated project, and copy the key (make sure to store it because the key can only be viewed once, or you'll have to generate another one).
+   - Obtain the project ID (under Organization).
+   - Create a file called ".env" file in project's root folder
+   - In .env:
+      '''bash
+      OPENAI_API_KEY=your_api_key
+      OPENAI_PROJECT_ID=your_project_id
+      '''
+5. Run the project:
+   '''bash
+   python3 src/backend/app.py
+   # or
+   python src/backend.app.py
+   '''
+6. Open http://localhost:5000/
+7. Due to OpenAI API cost coverage, I have not deployed this website and am keeping it local for now. If the project is chosen, I'll have the website deployed. 
 
 ## Usage
-1. Start the application:
-   ```bash
-   python src/backend/app.py
-   ```
-2. Open browser and navigate to `http://localhost:5000`
-3. Upload a market report PDF
-4. View and analyze the results
-5. Export to PDF for sharing
+1. Open browser and navigate to `http://localhost:5000`
+2. Upload a market report PDF
+3. View and analyze the results
+4. Export to PDF for sharing
 
-## Sample Reports
-[Include links to sample reports for each region:
-1. Houston
-2. Dallas
-3. Austin
-4. San Antonio
-5. Nashville
-6. Atlanta]
+## Sample reports
+- Can be viewed in REPORTS directory
 
 ## Future Updates
 The tool is designed to accommodate future quarterly reports through:
-1. Flexible PDF parsing logic
+1. Flexible PDF parsing logic (will find the approriate recent two quarters)
 2. Configurable analysis parameters
 3. Modular code structure
 4. Easy-to-update templates
@@ -74,12 +93,11 @@ src/
 ```
 
 ## Evaluation Criteria Met
-- ✅ Accurate data extraction & analysis
-- ✅ Usable interface for non-technical users
-- ✅ Clear documentation and presentation
-- ✅ Professional output formats
-- ✅ Comprehensive regional coverage
+- Accurate data extraction & analysis
+- Usable interface for non-technical users
+- Clear documentation and presentation
+- Professional output formats
+- Comprehensive regional coverage
 
 ## Contact
-longphan084@gmail.com. 
-(214) 457-3220
+Email: longphan084@gmail.com

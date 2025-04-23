@@ -72,7 +72,7 @@ Due to OpenAI API cost coverage, this application is currently running locally o
 4. Export to PDF for sharing
 
 ## Sample reports
-- Can be viewed in REPORTS directory
+- Can be viewed in REPORTS directory.
 
 ## Future Updates
 The tool is designed to accommodate future quarterly reports through:

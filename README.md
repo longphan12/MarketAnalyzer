@@ -2,6 +2,9 @@
 
 A GPT-powered tool for analyzing quarterly market reports across six regions: Houston, Dallas, Austin, San Antonio, Nashville, and Atlanta.
 
+## Important Notice
+Due to OpenAI API cost coverage, this application is currently running locally only. Upon project selection, it will be deployed as a web service.
+
 ## Features
 - PDF report analysis with AI-powered insights
 - Interactive web interface for easy report uploads
@@ -49,18 +52,17 @@ A GPT-powered tool for analyzing quarterly market reports across six regions: Ho
    - Obtain the project ID (under Organization).
    - Create a file called ".env" file in project's root folder
    - In .env:
-      '''bash
+      ```bash
       OPENAI_API_KEY=your_api_key
       OPENAI_PROJECT_ID=your_project_id
-      '''
+      ```
 5. Run the project:
-   '''bash
+   ```bash
    python3 src/backend/app.py
    # or
    python src/backend.app.py
-   '''
-6. Open http://localhost:5000/
-7. Due to OpenAI API cost coverage, I have not deployed this website and am keeping it local for now. If the project is chosen, I'll have the website deployed. 
+   ```
+6. Open `http://localhost:5000/`
 
 ## Usage
 1. Open browser and navigate to `http://localhost:5000`
